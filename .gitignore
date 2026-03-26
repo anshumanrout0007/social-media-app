@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+media/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Static collected
+staticfiles/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+```
+
+---
+
+## Summary of all files generated
+```
+templates/
+├── base.html                      ✅ (Part 1)
+├── accounts/
+│   ├── login.html                 ✅ (Part 1)
+│   ├── signup.html                ✅ (Part 1)
+│   ├── profile.html               ✅ (Part 1)
+│   ├── edit_profile.html          ✅ (Part 2)
+│   └── search.html                ✅ (Part 2)
+├── posts/
+│   ├── feed.html                  ✅ (Part 1)
+│   ├── create_post.html           ✅ (Part 2)
+│   ├── confirm_delete.html        ✅ (Part 2)
+│   ├── explore.html               ✅ (Part 2)
+│   └── saved.html                 ✅ (Part 2)
+├── chat/
+│   ├── inbox.html                 ✅ (Part 2)
+│   └── room.html                  ✅ (Part 1)
+└── notifications/
+    └── list.html                  ✅ (Part 2)
+
+Deployment/
+├── Procfile                       ✅
+├── runtime.txt                    ✅
+├── render.yaml                    ✅
+├── requirements.txt (prod)        ✅
+└── .gitignore                     ✅
